@@ -5,6 +5,7 @@
     background-color: #645d5d;
     height: 50px;
     position: sticky;
+    top:145px;
     z-index: 100;
     justify-content: space-evenly;
 }

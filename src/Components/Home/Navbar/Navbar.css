@@ -11,7 +11,7 @@ nav {
     background-color: #131921;
     position: sticky; 
     top:80px;   
-    z-index: 100;
+    
 }
 nav a{
     text-decoration: none;

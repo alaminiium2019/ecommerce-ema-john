@@ -3,7 +3,7 @@ import './Products.css';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const Products = (props) => {
-    const { stock, price, seller, img, name } = props.product;
+    const { stock, price, seller, img, name } = props.products;
     return (
         <div className="product d-flex">
             <div>
@@ -15,7 +15,8 @@ const Products = (props) => {
                 <p><small>by: {seller}</small></p>
                 <p>${price}</p>                
                 <p><small>Only {stock} left in stock - order soon</small></p>
-                <button className="addbutton"><ShoppingCartIcon></ShoppingCartIcon> Add to cart</button>
+                <button onClick={() => props.addProduct(props.products)}
+                className="addbutton"><ShoppingCartIcon></ShoppingCartIcon> Add to cart</button>
             </div>
         </div>
     );

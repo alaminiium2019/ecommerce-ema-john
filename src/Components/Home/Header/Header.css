@@ -2,7 +2,7 @@
     position: sticky; 
     text-align: center !important;    
     top:0px;   
-    z-index: 100;
+    background-color: #eeebe6;
 }
 .header img{
     height: 80px;
